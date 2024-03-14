@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kullanıcı Bilgi Formu</title>
+  </head>
+  <body>
+    <h1>Kullanıcı Bilgileri Formu</h1>
+    <form action="submit.php" method="post">
+      <label for="isim">Adınız:</label>
+      <input
+        type="text"
+        id="isim"
+        name="isim"
+        placeholder="Adınızı giriniz"
+        required
+      />
+
+      <label for="soyisim">Soyadınız:</label>
+      <input
+        type="text"
+        id="soyisim"
+        name="soyisim"
+        placeholder="Soyadınızı giriniz"
+        required
+      />
+
+      <br />
+
+      <label for="email">E-posta Adresiniz:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="E-posta adresinizi giriniz"
+        required
+      />
+
+      <br />
+
+      <label for="parola">Parolanız:</label>
+      <input
+        type="password"
+        id="parola"
+        name="parola"
+        placeholder="Parolanızı giriniz"
+        required
+      />
+
+      <br />
+
+      <label for="cinsiyet">Cinsiyetiniz:</label>
+      <br />
+      <input type="radio" id="erkek" name="cinsiyet" value="erkek" checked />
+      <label for="erkek">Erkek</label>
+      <br />
+      <input type="radio" id="kadin" name="cinsiyet" value="kadin" />
+      <label for="kadin">Kadın</label>
+
+      <br />
+
+      <label for="favori_meyve">Favori Meyveniz:</label>
+      <select id="favori_meyve" name="favori_meyve">
+        <option value="">Seçiniz...</option>
+        <option value="elma">Elma</option>
+        <option value="muz">Muz</option>
+        <option value="cilek">Çilek</option>
+      </select>
+
+      <br />
+
+      <label for="mesaj">Mesajınız:</label>
+      <textarea id="mesaj" name="mesaj"></textarea>
+
+      <br />
+
+      <input type="submit" value="Gönder" />
+    </form>
+  </body>
+</html>
