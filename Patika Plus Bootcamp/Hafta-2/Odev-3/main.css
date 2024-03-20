@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #fffbf3;
+}
+
+.container {
+  margin: 2rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Desktop */
+
+header {
+  display: flex;
+  font-size: 22px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+li {
+  margin-left: 2rem;
+}
+
+.logo {
+  font-size: 34px;
+}
