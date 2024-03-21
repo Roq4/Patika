@@ -15,7 +15,14 @@ a {
 /* Desktop */
 
 .container {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 120px;
+}
+
+.wrapper {
   margin: 3rem;
+  padding-bottom: 120px;
 }
 
 .logo {
@@ -104,15 +111,15 @@ p {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   background-color: #e89058;
-  width: 100%;
-  height: 150px;
   padding: 0 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
 }
 
 footer p {
